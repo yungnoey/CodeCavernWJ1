@@ -1,0 +1,119 @@
+.top-nav {
+  min-height: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $orange;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 2px solid $white;
+}
+
+.nav-hero {
+  font-family: "Sansita Swashed", cursive;
+  color: white;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: -3px;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: $white;
+  display: none;
+}
+
+.nav-hamburger {
+  margin-left: auto;
+  padding-top: 7px;
+}
+
+.nav-hamburger:hover {
+  cursor: pointer;
+}
+
+.nav-hamburger img {
+  height: 35px;
+  width: 40px;
+}
+
+.mobile-nav {
+  background-color: $gray;
+  border: 1px solid $orange;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 60px;
+  width: 100%; /* Full width */
+  height: calc(100% - 60px); /* Full height */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.close {
+  height: 50px;
+  width: 50px;
+  border: 2px solid $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  border-radius: 10px;
+}
+
+.mobile-nav-close {
+  height: 40px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.mNav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mNav-links {
+  text-decoration: none;
+  color: $white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.mNav-links:hover {
+  color: $orange;
+}
+
+.mNav-active {
+  color: $orange;
+}
+
+.new-badge {
+  margin-top: -45px;
+  margin-left: 12px;
+  margin-right: 255px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 30px;
+  width: 50px;
+  background-color: $orange;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+}

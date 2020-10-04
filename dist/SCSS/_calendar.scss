@@ -1,0 +1,192 @@
+.calendar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  width: 310px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(
+    312.03deg,
+    #ff6b00 0%,
+    #3d3d3d 47.4%,
+    #ff6b00 100%
+  );
+}
+
+.month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.month p {
+  font-size: 32px;
+  color: $white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.weekdays {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // padding: 10px;
+  padding-bottom: 5px;
+}
+
+.weekdays p {
+  font-size: 20px;
+  width: 40px;
+  padding-left: 1.43px;
+  padding-right: 1.43px;
+  text-align: center;
+  color: $white;
+}
+
+.calendar-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  // padding-bottom: 5px;
+  // padding-top: 5px;
+}
+
+.calendar-row p {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // padding-left: 2px;
+  // padding-right: 2px;
+}
+
+.available {
+  color: $white;
+}
+
+.available:hover {
+  cursor: pointer;
+  background-color: $white;
+  border-radius: 50%;
+  color: $orange;
+}
+
+.unavailable {
+  color: $black;
+}
+
+.unavailable:hover {
+  cursor: no-drop;
+}
+
+.passed-date {
+  text-decoration: line-through;
+}
+
+.passed-date:hover {
+  cursor: no-drop;
+}
+
+.selected {
+  background-color: $white;
+  border-radius: 50%;
+  color: $orange;
+}
+
+.selected:hover {
+  cursor: pointer;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: $white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dateSelected {
+  color: $orange;
+}
+
+.price {
+  color: $orange;
+}
+
+.label {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  height: 25px;
+  width: 175px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 2px solid $orange;
+}
+
+select {
+  height: 25px;
+  width: 175px;
+}
+
+#bookNowBtn {
+  margin-top: 10px;
+}
+
+.required {
+  color: $orange;
+}
+
+.close-modal {
+  height: 40px;
+  float: right;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.container p {
+  color: $white;
+  text-align: center;
+}
+
+.container h3 {
+  color: $orange;
+  text-align: center;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}

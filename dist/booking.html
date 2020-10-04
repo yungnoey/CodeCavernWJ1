@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Chase - Crtically Acclaimed Haunted House</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@400;700;900&family=Sansita+Swashed:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/CSS/styles.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="nav-hero">The Chase</div>
+      <div class="nav-menu">
+        <a href="/dist/index.html" class="nav-links">Home</a>
+        <a href="/dist//booking.html" class="nav-links">Book Now</a>
+        <a href="/dist/maze.html" class="nav-links">The Maze</a>
+      </div>
+      <div class="nav-hamburger">
+        <img id="hamburger" src="/dist/Assets/Images/bars-solid.svg" alt="" />
+      </div>
+    </nav>
+    <div class="container">
+      <h2>Book Now!</h2>
+      <p>The Chase is a fast paced terror inducing experience you won’t forget. We’re open every weekend in October, reserve your spot below.</p>
+      <h3>Pricing</h3>
+      <p>Fridays - <span class="price">$10</span> per person.</p>
+      <p>Saturdays - <span class="price">$15</span> per person.</p>
+      <p>Sundays - <span class="price">$15</span> per person.</p>
+      <div class="calendar-container">
+        <div class="calendar">
+          <div class="month">
+            <p>October</p>
+          </div>
+          <div class="weekdays">
+            <p>Mo</p>
+            <p>Tu</p>
+            <p>We</p>
+            <p>Th</p>
+            <p>Fr</p>
+            <p>Sa</p>
+            <p>Su</p>
+          </div>
+          <div id="calendarGrid"></div>
+        </div>
+      </div>
+      <div class="booking-form">
+        <p class="label">Selected Date:</p>
+        <p class="dateSelected" id="dateSelected">No Date Selected.</p>
+
+        <p class="label">First Name <span class="required">*</span></p>
+        <input type="text" id="fName" name="fname">
+
+        <p class="label">Last Name <span class="required">*</span></p>
+        <input type="text" id="lName" name="lname">
+
+        <p class="label">Email <span class="required">*</span></p>
+        <input type="email" id="email" name="email">
+
+        <p class="label">Phone Number</p>
+        <input type="text" id="phone" name="phone">
+
+        <p class="label">Group Size <span class="required">*</span></p>
+        <select name="groupSize" id="groupSize" onchange="calculatePrice()">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <p class="label">Your Total</p>
+        <p class="price" id="price">
+          $0.00</p>
+
+          <button class="btns" id="bookNowBtn" onclick="confirmBooking()">Book Now</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This website was created for
+        <a href="http://thecodecavern.com/" class="external-link"
+          >The Code Cavern</a
+        >’s inagural web jam. Be sure to check them out!
+      </p>
+    </div>
+    <div class="mobile-nav" id="mNav">
+      <div class="close">
+        <img
+          id="mNav-close"
+          class="mobile-nav-close"
+          src="/dist/Assets/Images/times-solid.svg"
+          alt="close mobile menu button"
+        />
+      </div>
+      <div class="mNav-menu">
+        <a href="/dist/index.html" class="mNav-links mNav-active">Home</a>
+        <a href="/dist//booking.html" class="mNav-links">Book Now</a>
+        <a href="/dist/maze.html" class="mNav-links">The Maze</a>
+        <span class="new-badge">NEW</span>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <img src="/dist/Assets/Images/times-solid.svg" alt="" class="close-modal" id="closeModal" onclick="closeModal()">
+      <div class="modal-content">
+        <p>Thanks for confirming your spot, <span id="customerName"></span>.</p> We've sent an email to <span id="customerEmail"></span>. We can't wait to see you on <span id="bookingDate"></span>.
+      </div>
+    </div>
+    <script src="/dist/JS/common.js"></script>
+    <script src="/dist/JS/booking.js"></script>
+  </body>
+</html>
